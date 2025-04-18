@@ -6,8 +6,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
+    "create:nojekyll": "node create-nojekyll.js",
     "astro": "astro",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run build && npm run create:nojekyll && gh-pages -d dist --dotfiles"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.4",

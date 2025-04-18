@@ -4,22 +4,22 @@
         {
             "title": "Proyecto 1",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ut suscipit quo rem provident at repudiandae aspernatur ipsum possimus dolorum veritatis labore debitis ea, asperiores quas ipsam vero repellendus molestias nesciunt ratione voluptas. Corrupti doloribus quo excepturi atque illo tenetur. Unde officiis commodi voluptatibus repellendus qui ipsam saepe autem repudiandae.",
-            "image": "astro/images/fingerprint.svg"
+            "image": "/astro/images/fingerprint.svg"
         },
         {
             "title": "Proyecto 2",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ut suscipit quo rem provident at repudiandae aspernatur ipsum possimus dolorum veritatis labore debitis ea, asperiores quas ipsam vero repellendus molestias nesciunt ratione voluptas. Corrupti doloribus quo excepturi atque illo tenetur. Unde officiis commodi voluptatibus repellendus qui ipsam saepe autem repudiandae.",
-            "image": "astro/images/fingerprint.svg"
+            "image": "/astro/images/fingerprint.svg"
         },
         {
             "title": "Proyecto 3",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ut suscipit quo rem provident at repudiandae aspernatur ipsum possimus dolorum veritatis labore debitis ea, asperiores quas ipsam vero repellendus molestias nesciunt ratione voluptas. Corrupti doloribus quo excepturi atque illo tenetur. Unde officiis commodi voluptatibus repellendus qui ipsam saepe autem repudiandae.",
-            "image": "astro/images/fingerprint.svg"
+            "image": "/astro/images/fingerprint.svg"
         },
         {
             "title": "Proyecto 4",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo ut suscipit quo rem provident at repudiandae aspernatur ipsum possimus dolorum veritatis labore debitis ea, asperiores quas ipsam vero repellendus molestias nesciunt ratione voluptas. Corrupti doloribus quo excepturi atque illo tenetur. Unde officiis commodi voluptatibus repellendus qui ipsam saepe autem repudiandae.",
-            "image": "astro/images/fingerprint.svg"
+            "image": "/astro/images/fingerprint.svg"
         }
     ]
 }
