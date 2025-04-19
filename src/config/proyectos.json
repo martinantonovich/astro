@@ -1,0 +1,29 @@
+
+{
+    "proyectos": [
+        {
+            "title": "Proyecto 1",
+            "description": "Desarrollamos google",
+            "image": "/astro/images/google.png",
+            "url": "https://www.google.com/"
+        },
+        {
+            "title": "Proyecto 2",
+            "description": "Desarrollamos mapas",
+            "image": "/astro/images/maps.png",
+            "url": "https://www.google.com/maps"
+        },
+        {
+            "title": "Proyecto 3",
+            "description": "Desarrollamos google",
+            "image": "/astro/images/google.png",
+            "url": "https://www.google.com/"
+        },
+        {
+            "title": "Proyecto 4",
+            "description": "Desarrollamos mapas",
+            "image": "/astro/images/maps.png",
+            "url": "https://www.google.com/maps"
+        }
+    ]
+}
