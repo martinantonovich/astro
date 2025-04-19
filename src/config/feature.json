@@ -14,13 +14,5 @@
     {
         "title": "Fast",
         "description": "This is an encrypted message."
-    },
-    {
-        "title": "Secure",
-        "description": "This is an encrypted message."
-    },
-    {
-        "title": "Cross plataform",
-        "description": "This is an encrypted message."
     }
 ]
