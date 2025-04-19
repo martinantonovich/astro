@@ -2,3 +2,12 @@ body{
     background: #202020;
     color: white;
 }
+
+h1, h2, h3, h4{
+    font-family: 'Poppins', sans-serif; /* Para títulos */
+}
+
+p{
+    font-family: 'Roboto', sans-serif;  /* Para texto del cuerpo */
+    font-size: medium;
+}
