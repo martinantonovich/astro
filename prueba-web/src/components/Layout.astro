@@ -1,0 +1,26 @@
+---
+import '../styles/global.css';
+import Navbar from './Navbar.jsx';
+import Starfield from './Starfield.jsx';
+---
+<!DOCTYPE html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <title>ALTOMAR</title>
+  </head>
+  <body class="relative overflow-x-hidden">
+    <!-- Starfield detrás -->
+    <Starfield client:load />
+
+    <!-- Navbar por encima del canvas -->
+    <Navbar client:load />
+
+    <!-- Contenido principal en z-index superior -->
+    <main class="pt-20 relative z-10">
+      <slot />
+    </main>
+  </body>
+</html>

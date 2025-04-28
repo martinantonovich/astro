@@ -1,0 +1,56 @@
+---
+import AnimatedSection from './AnimatedSection.jsx';
+---
+<AnimatedSection client:load>
+  <section
+    id="contact"
+    class="py-20 px-4 bg-surface-dark text-white"
+  >
+    <div class="container text-center">
+      <h2 class="text-4xl font-semibold mb-6">Contacto</h2>
+      <p class="text-gray-300 mb-8">
+        ¿Listo para llevar tu proyecto al siguiente nivel? Envíanos un mensaje.
+      </p>
+
+      <!-- Formulario centrado -->
+      <form
+        action="#"
+        method="POST"
+        class="mx-auto max-w-2xl grid grid-cols-1 md:grid-cols-2 gap-6"
+      >
+        <input
+          type="text"
+          name="name"
+          placeholder="Nombre"
+          required
+          class="input bg-surface-light"
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Email"
+          required
+          class="input bg-surface-light"
+        />
+        <input
+          type="text"
+          name="subject"
+          placeholder="Asunto"
+          class="input bg-surface-light md:col-span-2"
+        />
+        <textarea
+          name="message"
+          placeholder="Mensaje"
+          required
+          class="textarea bg-surface-light md:col-span-2"
+        ></textarea>
+        <button
+          type="submit"
+          class="btn-primary md:col-span-2 mx-auto"
+        >
+          Contáctanos
+        </button>
+      </form>
+    </div>
+  </section>
+</AnimatedSection>
