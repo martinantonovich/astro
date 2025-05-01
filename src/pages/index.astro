@@ -1,29 +1,17 @@
 ---
-import Layout from '../layouts/Layout.astro';
-
-//components
-import Altomar from '../components/landing/Altomar.astro'
-import Introduccion from '../components/landing/Introduccion.astro'
-import Nosotros from '../components/landing/Nosotros.astro'
-import Feature from '../components/landing/Feature.astro'
-import Proyectos from '../components/landing/Proyectos.astro'
+import Layout from '../components/Layout.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import Services from '../components/Services.astro';
+import Projects from '../components/Projects.astro';
+import Testimonials from '../components/Testimonials.astro';
+import Contact from '../components/Contact.astro';
 ---
-
-<Layout title='Altomar'>
-	<section id="Altomar" class="py-20"> 
-		<Altomar/>	
-	</section>
-	<section id="Introduccion" class="py-20"> 
-		<Introduccion/>	
-	</section>
-	<section id="Feature" class="py-20"> 
-		<Feature/>	
-	</section>
-	<section id="Nosotros" class="py-20"> 
-		<Nosotros/>	
-	</section>
-	<section id="Proyectos" class="py-20"> 
-		<Proyectos/>	
-	</section>
-
+<Layout>
+  <Hero />
+  <About />
+  <Services />
+  <Projects />
+  <Testimonials />
+  <Contact />
 </Layout>

@@ -1,1 +1,122 @@
-@import "tailwindcss";
+/* src/styles/global.css */
+
+/* 1) Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans:wght@400;600&display=swap&subset=latin-ext');
+
+/* 2) Tailwind directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 3) Base layer: fondo degradado y tipografías */
+@layer base {
+  /* Aplica el fondo radial a todo el viewport */
+  section {
+    background-color: transparent !important;
+  }
+
+  html, body {
+    min-height: 100vh;
+    margin: 0;
+    background: radial-gradient(circle at center, #0a0f2f 0%, #000000 80%);
+  }
+  html {
+    font-family: 'Open Sans', sans-serif;
+    color: #E5E7EB; /* gray-300 */
+  }
+  body {
+    @apply antialiased;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Alfa Slab One', cursive;
+    color: #a3a3a3a6;
+    text-shadow:
+      0 0 6px rgba(255, 255, 255, 0.7),
+      0 0 12px rgba(218, 218, 218, 0.5);
+  }
+  p, li, a {
+    @apply text-gray-300;
+  }
+  a {
+    @apply underline text-primary hover:text-primary/80 transition;
+  }
+}
+
+@layer components {
+  /* Cards con borde neón */
+  .card {
+    @apply bg-transparent p-6 rounded-lg transition-transform hover:scale-[1.02];
+    border: 2px solid rgba(0, 255, 255, 0.7);       /* borde cian neón */
+    box-shadow:
+      0 0 8px rgba(0,255,255,0.7),
+      0 0 16px rgba(0,255,255,0.5);
+  }
+
+  /* Si tienes otras clases de cards, alias */
+  .project-card {
+    @apply card;
+  }
+  .service-card {
+    @apply card;
+  }
+  .testimonial-card {
+    @apply card;
+  }
+
+  /* Ajustes extra para que el texto destaque */
+  .card h3 {
+    @apply text-white;
+  }
+  .card p {
+    @apply text-gray-300;
+  }
+}
+
+/* 4) Componentes */
+@layer components {
+  nav {
+    @apply fixed top-0 left-0 w-full bg-black/60 backdrop-blur-sm border-b border-gray-700 z-50;
+  }
+  .container {
+    @apply mx-auto px-4;
+  }
+  .neon-title {
+    @apply text-4xl lg:text-5xl font-bold mb-6 text-center;
+  }
+  .project-card {
+    @apply flex items-start gap-4 bg-black/20 border border-gray-600 p-6 rounded-lg transition-transform hover:scale-[1.02];
+  }
+  .project-number {
+    @apply flex-none w-10 h-10 bg-red-600 text-white font-bold rounded-full text-center leading-10;
+  }
+  .btn-primary {
+    @apply inline-block bg-primary text-black font-semibold uppercase tracking-wide px-6 py-2 rounded-full transition hover:bg-primary/90;
+  }
+  input, textarea {
+    @apply bg-gray-800 border border-gray-600 text-gray-200 p-3 rounded-md placeholder-gray-500 focus:ring-2 focus:ring-primary outline-none w-full;
+  }
+  textarea {
+    @apply resize-none;
+  }
+}
+
+@layer components {
+    /* Clase para títulos neón */
+    .neon-title {
+      font-family: 'Alfa Slab One', cursive;
+      color: #000000;
+      /* sombras para simular neón */
+      text-shadow:
+        0 0 4px rgba(255, 255, 255, 0.7),
+        0 0 8px rgba(255, 255, 255, 0.884),
+        0 0 12px rgba(255, 255, 255, 0.5),
+        0 0 16px rgba(255, 255, 255, 0.925);
+    }
+  }
+  
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-white font-medium px-6 py-3 rounded-full transition duration-150 hover:bg-primary/90;
+  }
+}
+    

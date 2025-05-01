@@ -15,23 +15,7 @@ module.exports = {
           dark: '#111827',
         },
         accent: '#FACC15',
-        gray: {
-          ...defaultTheme.colors.gray, // Spread the default gray palette
-        },
-      },
-      fontFamily: {
-        sans: ['Inter', 'ui-sans-serif', 'system-ui'],
-      },
-      container: {
-        center: true,
-        padding: {
-          DEFAULT: '1rem',
-          lg: '2rem',
-          xl: '4rem',
-        },
-      },
-      boxShadow: {
-        card: '0 4px 14px rgba(0,0,0,0.10)',
+        gray: defaultTheme.colors.gray, // Ensure the default gray palette is included
       },
     },
   },
